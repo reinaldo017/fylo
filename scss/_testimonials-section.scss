@@ -1,0 +1,41 @@
+.testimonials {
+    width: 85%;
+    margin: 10rem auto;
+    display: grid;
+    grid-template: 3fr 3fr 3fr / 1fr;
+}
+
+.testimonial {
+    margin: 1rem;
+    border-radius: 10px;
+    background-color: $dark-blue-4;
+
+    &__paragraph {
+        margin: 1.8rem;
+        line-height: 1.8;
+    }
+
+    &__user-container {
+        @include horizontal-alignment(flex-start, center);
+        margin: 1.8rem;
+    }
+
+    &__user-avatar {
+        width: 3.5rem;
+        border-radius: 50%;
+    }
+
+    &__user-info-container {
+        @include vertical-alignment(center, flex-start);
+        margin-left: 1rem;
+    }
+
+    &__user-name {
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem;
+    }
+
+    &__user-title {
+        margin: 0;
+    }
+}

@@ -1,0 +1,57 @@
+.footer {
+    &__container {
+        margin: 6rem 2rem 0 2rem;
+        display: grid;
+        grid-template-areas: "logo logo"
+                              "location location"
+                              "number number"
+                              "email email"
+                              "links-1 ."
+                              "links-2 .";
+        gap: 1rem;
+                             
+    }
+
+    &__logo {
+        width: 8rem;
+        max-width: 10rem;
+        grid-area: logo;
+    }
+
+    &__location {
+        grid-area: location;
+    }
+
+    &__number {
+        grid-area: number;
+    }
+
+    &__email {
+        grid-area: email;
+    }
+
+    &__links--1 {
+        grid-area: links-1;
+    }
+
+    &__links--2 {
+        grid-area: links-2;
+    }
+
+    //Content styling
+    .info {
+        @include horizontal-alignment(flex-start, flex-start);
+    }
+
+    &__text {
+        margin: 0 0 0 2rem;
+    }
+
+    &__links {
+
+    }
+
+    &__links > li {
+        margin: 1rem 0;
+    }
+}

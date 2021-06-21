@@ -1,0 +1,32 @@
+html {
+    font-size: 14px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    //background-color: $dark-blue-2;
+    background: linear-gradient(to bottom, $dark-blue 0, $dark-blue 37rem, $dark-blue-2 37rem,  $dark-blue-2 100%);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+}
+
+p {
+    font-family: 'Raleway', sans-serif;
+    line-height: 1.5;
+
+}
+
+a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    color: $white;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}

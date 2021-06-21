@@ -1,0 +1,10 @@
+.button {
+    padding: 1em 4em;
+    border-radius: 25px;
+    border: 0;
+    margin: 1rem auto;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    background-image: linear-gradient( to left, $cyan, $blue);
+    color: $white;
+}

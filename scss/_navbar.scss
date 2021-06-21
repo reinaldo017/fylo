@@ -1,0 +1,16 @@
+.navigation {
+    width: 90%;
+    margin: 2rem auto;
+    @include horizontal-alignment(space-between, center);
+
+    &__logo {
+        width: 25%;
+        max-width: 10rem;
+    }
+
+    &__links-container {
+        width: 50%;
+        max-width: 23rem;
+        @include horizontal-alignment(space-around, center);
+    }
+}

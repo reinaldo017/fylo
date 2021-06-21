@@ -1,0 +1,31 @@
+.header {
+    width: 100%;
+    background-image: url('../images/bg-curvy-mobile.svg');
+    background-repeat: no-repeat;
+    background-size: 100vw 50vh;
+    background-position: 50% 65%;
+
+    &__container {
+        margin: 6rem auto;
+        @include vertical-alignment(center, center);
+    }
+
+    &__img {
+        width: 70%;
+        max-width: 54.3rem;
+        margin-bottom: 2rem;
+    }
+
+    &__title {
+        width: 85%;
+        max-width: 44rem;
+        text-align: center;
+        line-height: 1.4;
+    }
+
+    &__paragraph {
+        margin: 1rem 5rem;
+        max-width: 30rem;
+        text-align: center;
+    }
+}

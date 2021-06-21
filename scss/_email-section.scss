@@ -1,0 +1,33 @@
+.email {
+    margin: 1.5rem;
+    border-radius: 10px;
+    background-color: $dark-blue;
+
+    &__container {
+        margin: 0 2rem;
+        padding: 2rem 0;
+        @include vertical-alignment(space-around, stretch);
+    }
+
+    &__title {
+        text-align: center;
+    }
+
+    &__paragraph {
+        letter-spacing: 0.5px;
+        text-align: center;
+    }
+
+    &__input {
+        margin-top: 1.5rem;
+        padding: 1em 3.5em;
+        border-radius: 25px;
+        border: 0;       
+    }
+
+    .button {
+        width: 100%;
+        cursor: pointer;
+    }
+    
+}
