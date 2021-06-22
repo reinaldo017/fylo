@@ -9,8 +9,8 @@
     }
 
     &__links-container {
-        width: 50%;
-        max-width: 23rem;
+        width: 60%;
+        max-width: 18rem;
         @include horizontal-alignment(space-around, center);
     }
 }

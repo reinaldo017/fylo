@@ -5,8 +5,8 @@ html {
 body {
   margin: 0;
   padding: 0;
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1c2431), color-stop(37rem, #1c2431), color-stop(37rem, #181f2a), to(#181f2a));
-  background: linear-gradient(to bottom, #1c2431 0, #1c2431 37rem, #181f2a 37rem, #181f2a 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0, #1c2431), color-stop(37rem, #1c2431), color-stop(37rem, #181f2a), color-stop(280rem, #181f2a), color-stop(280rem, #0b1523), to(#0b1523));
+  background: linear-gradient(to bottom, #1c2431 0, #1c2431 37rem, #181f2a 37rem, #181f2a 280rem, #0b1523 280rem, #0b1523 100%);
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -66,8 +66,8 @@ ul {
 }
 
 .navigation__links-container {
-  width: 50%;
-  max-width: 23rem;
+  width: 60%;
+  max-width: 18rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,6 +362,7 @@ ul {
 }
 
 .footer__logo {
+  margin-bottom: 2rem;
   width: 8rem;
   max-width: 10rem;
   -ms-grid-row: 1;
@@ -425,5 +426,40 @@ ul {
 
 .footer__links > li {
   margin: 1rem 0;
+}
+
+.footer__social-media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 8rem;
+  margin: 2rem auto;
+}
+
+.footer__social-media .icon {
+  width: 0.9rem;
+  padding: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+  color: white;
+}
+
+.footer__social-media .fa-facebook-f {
+  padding-left: 10px;
+}
+
+.footer .attribution {
+  width: 80%;
+  margin: 2rem auto;
+  font-size: 0.9rem;
 }
 /*# sourceMappingURL=styles.css.map */
