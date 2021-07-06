@@ -1,8 +1,18 @@
 .testimonials {
     width: 85%;
     margin: 10rem auto;
+    padding: 1rem 0;
+    background-image: url('../images/bg-quotes.png');
+    background-repeat: no-repeat;
+    background-position: 10px -8px;
     display: grid;
     grid-template: 3fr 3fr 3fr / 1fr;
+
+    //Desktop Version
+    @media screen and (min-width: $desktop-size) {
+        @include horizontal-alignment(space-around, center);
+        width: 90%;
+    }
 }
 
 .testimonial {
@@ -37,5 +47,10 @@
 
     &__user-title {
         margin: 0;
+    }
+
+    //Desktop Version
+    @media screen and (min-width: $desktop-size) {
+        margin: 1rem 1.5rem;
     }
 }

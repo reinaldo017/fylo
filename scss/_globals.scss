@@ -1,11 +1,21 @@
+//Variables
+$desktop-size: 1000px;
+
 html {
     font-size: 14px;
+    @media  screen and (min-width: $desktop-size) {
+        font-size: 15px;
+    }
 }
 
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(to bottom, $dark-blue 0, $dark-blue 37rem, $dark-blue-2 37rem,  $dark-blue-2 280rem, $dark-blue-3 280rem, $dark-blue-3 100%);
+    background: linear-gradient(to bottom, $dark-blue 0, $dark-blue 10%, $dark-blue-2 10%,  $dark-blue-2 80%, $dark-blue-3 80%, $dark-blue-3 100%);
+    //Desktop Version
+    @media screen and (min-width: $desktop-size) {
+        background-image: linear-gradient(to bottom, $dark-blue 0, $dark-blue 17%, $dark-blue-2 17%, $dark-blue-2 83%, $dark-blue-3 83%, $dark-blue-3 100%);
+    }
 }
 
 h1, h2, h3, h4, h5, h6, p {

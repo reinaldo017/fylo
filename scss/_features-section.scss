@@ -1,6 +1,15 @@
 .features-section {
     @include vertical-alignment(space-around, center);
     margin: 3rem;
+
+    //Desktop Version 
+    @media screen and (min-width: $desktop-size) {
+        display: grid;
+        width: 75%;
+        margin: 13rem auto;
+        grid-template: 1fr 1fr / 1fr 1fr;
+        grid-column-gap: 125px;
+    }
 }
 
 .feature {
@@ -23,4 +32,5 @@
     &__description {
         text-align: center;
     }
+
 }

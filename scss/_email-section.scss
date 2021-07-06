@@ -1,5 +1,7 @@
 .email {
-    margin: 1.5rem;
+    margin: 1.5rem auto;
+    width: 90%;
+    max-width: 42rem;
     border-radius: 10px;
     background-color: $dark-blue;
 
@@ -18,16 +20,50 @@
         text-align: center;
     }
 
+    &__input-container {
+        @include vertical-alignment(space-around, stretch);
+    }
+
+
     &__input {
         margin-top: 1.5rem;
         padding: 1em 3.5em;
         border-radius: 25px;
-        border: 0;       
+        border: 0; 
+
+        &:invalid {
+            border: 2px solid red;
+        }
     }
 
     .button {
         width: 100%;
+        min-width: 188px;
         cursor: pointer;
     }
     
+    //Desktop Version
+    @media screen and (min-width: $desktop-size) {
+        width: 60%;
+        margin: 14rem auto;
+
+        &__container {
+            margin: 0 6rem;
+        }
+
+        &__input-container {
+            @include horizontal-alignment(space-around, baseline);
+        }
+
+        &__input {
+            width: 50%;
+        }
+
+        .button {
+            width: 30%;
+            padding: 1em 2em;
+            margin: 0 1em;
+        }
+
+    }
 }

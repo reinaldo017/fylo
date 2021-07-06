@@ -2,7 +2,7 @@
     width: 100%;
     background-image: url('../images/bg-curvy-mobile.svg');
     background-repeat: no-repeat;
-    background-size: 100vw 50vh;
+    background-size: 100vw 65vh;
     background-position: 50% 65%;
 
     &__container {
@@ -12,7 +12,7 @@
 
     &__img {
         width: 70%;
-        max-width: 54.3rem;
+        max-width: 38rem;
         margin-bottom: 2rem;
     }
 
@@ -28,4 +28,12 @@
         max-width: 30rem;
         text-align: center;
     }
+
+    //Desktop Version
+    
+    @media screen and (min-width: $desktop-size) {
+        background-size: 90vw 90vh;
+        background-position: 50% 100%;
+    }
+    
 }

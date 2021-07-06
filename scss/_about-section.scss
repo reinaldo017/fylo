@@ -9,8 +9,9 @@
 
    &__text-container {
        @include vertical-alignment(space-around, center);
-       margin: 2rem auto;
+       margin: 2rem;
        width: 90%;
+       min-width: 15rem;
    }
 
    &__title {
@@ -34,6 +35,26 @@
            position: relative;
            top: 4px;
            left: 5px;
+       }
+
+       &:active {
+           color: $white;
+       }
+   }
+
+   //Desktop Version
+   @media screen and (min-width: $desktop-size) {
+       @include horizontal-alignment(space-around, center); 
+
+       &__text-container {
+           @include vertical-alignment(space-around, flex-start);
+           margin: 2rem 3rem;
+       }
+
+       &__title {
+           width: 50%;
+           font-size: 2rem;
+           line-height: 1.4;
        }
    }
 }

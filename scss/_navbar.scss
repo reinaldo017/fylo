@@ -13,4 +13,11 @@
         max-width: 18rem;
         @include horizontal-alignment(space-around, center);
     }
+
+    &__link {
+        &:active {
+            text-decoration: underline;
+            font-weight: bold;
+        }
+    }
 }
